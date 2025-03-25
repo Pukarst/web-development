@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>html basics</title>
+    <h1 style="color: darkcyan">About me..</h1>
+  </head>
+  <body>
+    <img src="/images/image1.jpg" alt="My Profile" width="150" height="150" />
+    <img src="asdf" alt="My Family" width="150" />
+    <p style="color: yellowgreen; font-family: cursive">
+      I am a Computer Engineering student. I am passionate about the
+      intersection of hardware and software. Through coursework and personal
+      projects, I have gained some knowledge in programming languages. I am
+      eager to apply my skills and knowledge through internships and projects in
+      the tech industry.
+    </p>
+    <h3>Quotes</h3>
+    <p>
+      1."You don't learn to walk by following rules. You learn by doing, and by
+      falling over."---Richard Branson
+    </p>
+    <p>
+      "Einstein once said, 'Imagination is more important than knowledge,' and
+      in many ways, he was right."
+    </p>
+    <a href="https://github.com/Pukarst" style="color: crimson;">My GitHub</a>
+    <br />
+    <a href="https://www.linkedin.com/in/pukar-bade-b7b85b323/">My Linkedin</a>
+  </body>
+</html>
+
+
