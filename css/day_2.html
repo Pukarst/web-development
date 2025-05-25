@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS selectors</title>
+        <h1 id="h1">CSS Selectors</h1>
+    </head>
+    <style>
+        h1{
+            border: 5px;
+            width: fit-content;
+            border-color: aqua;
+            border-style: double;
+            border-radius: 10px;
+            font-family: cursive;
+            color: yellowgreen;
+        }
+        p{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+            color: rgb(150, 150, 150);
+        }
+        h2{
+            border: 5px;
+            width: fit-content;
+            border-color: aqua;
+            border-style: double;
+            border-radius: 10px;
+            font-family: cursive;
+            color: beige;
+        }
+        table{
+            border-color:goldenrod;
+            border-radius: 1px;
+            text-align: center;
+            width: 100%;
+            background-color: ;
+        }
+        th,td{
+            border: 1px solid blue;
+            padding: 8px;
+            font-family: cursive;
+            color: yellowgreen;
+        }
+        th{
+            color: yellow;
+            font-family:'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        *{
+            background-color:black;
+        }
+    </style>
+    <body>
+        <p id="p">CSS selectors are the patterns that are used to select and style the HTML elements on the web page. They tell the browser which elements that the user wanted to apply user's CSS style.</p>
+        <br>
+        <h2 id="h2">Why are CSS selectors important?</h2>
+        <p id="P">The CSS selectors are important because they control where the user's styles go. Without selectors, CSS wouldn't know what to style. It would be like trying to decorate a room without knowing which room we are in.</p>
+        <br>
+        <table border="5" id="tab">
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Example description</th>
+            </tr>
+            <tr>
+                <td>Universal</td>
+                <td>*</td>
+                <td>select all elements</td>
+            </tr>
+            <tr>
+                <td>Type/element</td>
+                <td>p,h1,div,span,etc</td>
+                <td>select all element of that type</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>.menu</td>
+                <td> select element with class name='menu'</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>#header</td>
+                <td>select element with id='header'</td>
+            </tr>
+            <tr>
+                <td>Grouping</td>
+                <td>h1,p</td>
+                <td>select both &lt;h1&gt; and &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td>Descendant</td>
+                <td>div p</td>
+                <td>select all &lt;p&gt; inside &lt;div&gt;</td>
+            </tr>
+            <tr>
+                <td>Child</td>
+                <td>ul > li</td>
+                <td>select only direct &lt;li&gt; children of &lt;ul&gt;</td>
+            </tr>
+            <tr>
+                <td>Adjacent Sibling</td>
+                <td>h1+p</td>
+                <td>select first &lt;p&gt; immediately after an &lt;h1&gt;</td>
+            </tr>
+            <tr>
+                <td>Attribute</td>
+                <td>input[type='text']</td>
+                <td>select &lt;input&gt; with a type attribute of 'text'</td>
+            </tr>
+            <tr>
+                <td>Pseudo-class</td>
+                <td>a:hover</td>
+                <td>select an &lt;a&gt; when the mouse is hovering over it</td>
+            </tr>
+            <tr>
+                <td>Pseudo-element</td>
+                <td>p::first-line</td>
+                <td>select the first line of a &lt;p&gt;</td>
+            </tr>
+        </table>
+    </body>
+</html>
