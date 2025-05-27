@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Colors</title>
+        <h1>CSS COLORS</h1>
+    </head>
+    <style>
+        *{
+            background-color: orange;
+            margin: 10pt;
+        }
+        h1{
+            color: rgba(0, 255, 81, 0.75);
+            font-family: cursive;
+            border: 5px solid rgb(140,155,250);
+            border-radius: 80pt;
+            text-align: center;
+            background-color: hsl(187, 45%, 30%);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        p{
+            color: rgb(120, 110, 211);
+            
+            text-align: left;
+            font-size: large;
+        }
+        h2{
+            color:#1155FF;
+            border: 5px solid rebeccapurple;
+            border-radius: 25%;
+            text-align: center;
+            font-family: cursive;
+            width: 40%;
+            background-color:greenyellow;
+        }
+        ul,li{
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <body>
+        <p>Color is a CSS property that sets the foreground color of an element's text content. It affects the color of text and text-related decorations (like underlines on links), but not the background or borders unless specified separately. In CSS, color can be also specifiedby using RGB values, HEX values, HSL values, RGBA values and HSLA values.</p> <br>
+        <h2>RGB Value</h2>
+        <ul style="list-style-type: disc;">
+            <li>In CSS, a color can be specified as an RGB value, using the formulae as: <br>
+            rgb(red,green,blue) </li>
+            <li>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</li>
+        </ul>
+        <h2>RGBA value</h2>
+        <ul style="list-style-type:disc">
+            <li>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</li>
+            <li>An RGBA color value is specified with: <br>
+            rgba(red,green,blue,alpha)</li>
+            <li>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).</li>
+        </ul>
+        <h2>HEX Value</h2>
+        <ul style="list-style-type: disc;">
+            <li>In CSS, a color can be specified using a hexadecimal value in the form: <br>
+            #rrggbb</li>
+            <li>The RR (red), GG (green) and BB (blue) are hexadecimal integers specify the components of the color.</li>
+            <li>The rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</li>
+        </ul>
+        <h2>HSL Value</h2>
+        <ul style="list-style-type: disc;">
+            <li>In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form: <br>
+            hsl(hue,saturation,lightness)</li>
+            <li>where;
+                <ul>
+                    <li>
+                        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. 
+                    </li>
+                    <li>
+                        Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+                    </li>
+                    <li>
+                        Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>HSLA Value</h2>
+        <ul style="list-style-type: disc;">
+            <li>
+                HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+            </li>
+            <li>
+                An HSLA color value is specified as: <br>
+                hsla(hue,saturation,lightness,alpha)
+            </li>
+            <li>
+                The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+            </li>
+        </ul>
+    </body>
+</html>
