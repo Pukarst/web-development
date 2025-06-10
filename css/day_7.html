@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Overflow Example</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url(/web-development/css/image/stsdfg.webp) no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+    main {
+      flex: 1 0 auto;
+      max-width: 900px;
+      margin: 40px auto 20px;
+      padding: 0 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      background-image: url(/web-development/css/image/bg.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-top: 0;
+      padding-top: 20px;
+      color: #333;
+      text-shadow: 1px 1px 2px #aaa;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin: 1.2em 75px;
+      color: #444;
+      font-family: cursive;
+    }
+
+    mark {
+      background-color: #f9d342;
+      color: #333;
+      padding: 0 4px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-family: 'Courier New', monospace;
+      font-style: oblique;
+      font-size: 2rem;
+      margin: 30px 0 15px;
+      color: #2c3e50;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    }
+
+    /* Horizontal Overflow Box */
+    .horizontal-box {
+      width: 100%;
+      max-width: 600px;
+      height: 110px;
+      border: 2px solid #444;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 15px 20px;
+      margin: 0 auto 50px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      color: #333;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: burlywood;
+    }
+
+    /* Chat box */
+    .chat-box {
+      width: 100%;
+      max-width: 350px;
+      height: 220px;
+      border: 1px solid #999;
+      padding: 15px 20px;
+      overflow-y: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      color: yellowgreen;
+      margin: 0 auto 50px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-image: url(/web-development/css/image/mountains-best-for-desktop-background-wallpaper-preview.jpg);
+    }
+
+    .message {
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .message:last-child {
+      margin-bottom: 0;
+    }
+    .message.center {
+      text-align: center;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    /* Footer */
+    footer {
+      flex-shrink: 0;
+      background-image: url(/web-development/css/image/asdf.jpg);
+      background-color: burlywood;
+      color:white;
+      font-family: cursive;
+      font-weight: bold;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    footer a {
+      color: #1da1f2;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+      color: #0d8ddb;
+    }
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>CSS Overflow</h1>
+
+    <p>
+      The <mark>overflow</mark> property in CSS controls what happens when the content is too big to fit inside its container (like a div, box, section, etc).
+      This is a useful property because imagine that the user has a box with a height of 200px, but the content inside it is 300px.
+      Does the user want to cut it off, scroll, or just let it overflow? That's what the <mark>overflow</mark> property lets the user decide.
+    </p>
+
+    <h2>Horizontal Overflow Layout Example</h2>
+    <div class="horizontal-box">
+      Nepal is a beautiful country located in South Asia, known for its breathtaking Himalayan mountains including Mount Everest, the highest peak in the world,
+      as well as its rich cultural heritage, ancient temples, friendly people, diverse wildlife, and historical landmarks such as Lumbini — the birthplace of Lord Buddha —
+      which attract tourists from all over the globe who come to experience trekking, spiritual sites, and the vibrant traditions of this Himalayan nation.
+    </div>
+
+    <h2>Vertical Overflow Layout Example</h2>
+    <div class="chat-box" tabindex="0">
+      <div class="message">Hello!</div>
+      <div class="message">How are you?</div>
+      <div class="message">I'm learning CSS.</div>
+      <div class="message">It’s fun to build web pages!</div>
+      <div class="message">Overflow lets me scroll this box.</div>
+      <div class="message center" style="color: white;">Nepal</div>
+      <div class="message">
+        Nepal is a beautiful country located in South Asia, known for its breathtaking Himalayan mountains including Mount Everest, the highest peak in the world,
+        as well as its rich cultural heritage, ancient temples, friendly people, diverse wildlife, and historical landmarks such as Lumbini — the birthplace of Lord Buddha —
+        which attract tourists from all over the globe who come to experience trekking, spiritual sites, and the vibrant traditions of this Himalayan nation.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 | View my work on
+    <a href="https://github.com/Pukarst" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </footer>
+
+</body>
+</html>
