@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Alignment Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .text-alignment {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center; 
+    }
+
+    .center-block {
+      width: 200px;
+      margin: 20px auto; 
+      padding: 10px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      height: 200px;
+      background-color: #d0f0ff;
+      margin: 20px 0;
+    }
+
+    .flex-item {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      place-items: center; 
+      height: 200px;
+      background-color: #ffe0b2;
+      margin: 20px 0;
+    }
+
+    .grid-item {
+      background-color: #ff7043;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .inline-container {
+      font-size: 20px;
+      line-height: 50px;
+      height: 50px;
+      border: 1px solid #ccc;
+    }
+
+    .inline-box {
+      display: inline-block;
+      vertical-align: middle; 
+      width: 30px;
+      height: 30px;
+      background-color: #2196f3;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Text Alignment</h2>
+  <div class="text-alignment">
+    This text is <strong>center aligned</strong> using <code>text-align: center</code>.
+  </div>
+
+  <h2>2. Center Block Using Margin</h2>
+  <div class="center-block">
+    I am horizontally centered using <code>margin: auto</code>.
+  </div>
+
+  <h2>3. Flexbox Alignment</h2>
+  <div class="flex-container">
+    <div class="flex-item">Flex Centered</div>
+  </div>
+
+  <h2>4. Grid Alignment</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid Centered</div>
+  </div>
+
+  <h2>5. Vertical Align (Inline)</h2>
+  <div class="inline-container">
+    <span class="inline-box"></span>
+    Inline Box Aligned Middle
+  </div>
+
+</body>
+</html>
